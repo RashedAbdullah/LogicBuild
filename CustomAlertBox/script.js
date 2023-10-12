@@ -9,7 +9,7 @@ function addAndAlert() {
 
     const alertBox = document.querySelector(`.alertBox`);
     if (inputValue === ``) {
-        alertBox.style.display = `inline-block`;
+        alertBox.style.display = `flex`;
     } else {
         showBox.appendChild(p);
         p.innerText = inputValue;

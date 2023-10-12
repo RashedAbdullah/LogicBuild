@@ -28,10 +28,6 @@ body {
     background-color: white;
     font-size: 18px;
     text-align: center;
-    width: 300px;
-   position: relative;
-   top: 40%;
-   left: 40%;
 }
 
 .alertBox > .alertTextAndBtn > button {
