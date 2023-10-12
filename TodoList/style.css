@@ -1,0 +1,100 @@
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url(./fonts/JetBrainsMono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: JetBrainsMono-SemiBold;
+    src: url(./fonts/JetBrainsMono-SemiBold.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: JetBrainsMono-SemiBold;
+}
+
+.hero {
+    height: 100vh;
+    background-color: rgb(0, 45, 45);
+    color: white;
+
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.mainTask > form > input {
+    height: 35px;
+    padding: 5px;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-family: JetBrainsMono-SemiBold;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.mainTask > form >  form > input:focus {
+    border: none;
+    outline: none;
+}
+
+.mainTask > form > input::placeholder {
+    font-family: JetBrainsMono-SemiBold;
+}
+
+.mainTask > form > button {
+    height: 45px;
+    width: 60px;
+    font-family: JetBrainsMono-SemiBold;
+    background-color: rgb(0, 83, 83);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mainTask > form > button:hover {
+    color: blue;
+}
+
+.addedTask > ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.addedTask > ul {
+    list-style: none;
+}
+
+.addedTask > ul > i {
+    cursor: pointer;
+    justify-self: self-end;
+
+}
+
+
+.completedTasks {
+    padding-top: 200px;
+    
+}
+.completedTasks > ul {
+    border-top: 1px solid white;
+} 
+
+.completedHeadline {
+    display: none;
+}
+
+
+/* Style the custom checkbox when checked */
+input[type="checkbox"]:checked + .custom-checkbox {
+border-bottom: 1px solid #ffffff;
+}

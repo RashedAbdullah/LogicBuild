@@ -83,7 +83,7 @@ body {
   background-color: var(--dark);
   border-radius: 7px;
   cursor: pointer;
-  max-height: 495px;
+  max-height: 530px;
   overflow: auto;
 }
 

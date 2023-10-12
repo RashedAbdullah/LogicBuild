@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'KFGQPC';
+    src: url('./fonts/KFGQPC.otf') format('otf');
+    /* You can add additional font formats for browser compatibility */
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'KFGQPC';
+    background-color: rgb(0, 31, 31);
+    color: white;
+    font-size: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.hero > .surahNamesList {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 50px;
+
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.hero > .surahNamesList > div {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hero > .showSurah {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.showSurah > .surahHeadLine, .showSurah > .bismillah {
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+.showSurah > .surahHeadLine > p, .showSurah > .bismillah > p {
+    text-align: center;
+}
+
+.showSurah > .allAyats {
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.showSurah > .allAyats > p {
+    line-height: 35px;
+}
