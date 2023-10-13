@@ -27,6 +27,11 @@ body {
     justify-content: center;
 }
 
+.hero > div {
+    display: flex;
+    gap: 100px;
+}
+
 .mainTask > form > input {
     height: 35px;
     padding: 5px;
@@ -64,6 +69,8 @@ body {
 }
 
 .addedTask > ul {
+    font-size: 20px;
+
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -79,24 +86,49 @@ body {
     align-self: flex-end;
 }
 
-
-.completedTasks {
-    padding-top: 200px;
-    
+.addedTask > ul > form > input {
+    background-color: white;
+    font-family: JetBrainsMono-Regular;
+    font-size: 18px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
 }
+
+.addedTask > ul > form > input:focus {
+    outline: none;
+}
+
+.addedTask > ul > form > button {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
 .completedTasks > ul {
-    border-top: 1px solid white;
+    margin-top: 20px;
+
+    display: flex;
+    gap: 20px;
 } 
 
+.completedTasks > ul > li {
+    text-decoration:line-through;
+    list-style: none;
+}
+
+.completedTasks > ul > i {
+    justify-self: end;
+}
+
 .completedHeadline {
-    display: none;
+    font-size: 30px;
 }
 
-
-/* Style the custom checkbox when checked */
-input[type="checkbox"]:checked + .custom-checkbox {
-border-bottom: 1px solid #ffffff;
-}
 
 /* Alert */
 .alertMainDiv {
@@ -107,7 +139,7 @@ border-bottom: 1px solid #ffffff;
     top: 0;
     left: 0;
 
-    display: flex;
+    /* flex in JavaScript */
     align-items: center;
     justify-content: center;
 
