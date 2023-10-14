@@ -84,9 +84,13 @@ function addFucn() {
     editForm.addEventListener(`submit`, function (event) {
       event.preventDefault();
       
-      this.parentElement.insertBefore(li, ul.childNodes[2]);
+      if (createInputBox.value === ``) {
+        alertMainDiv.style.display = `flex`;
+      } else {
+        this.parentElement.insertBefore(li, ul.childNodes[2]);
       li.innerText = createInputBox.value.trim()
       this.remove();
+      }
       
     })
     
