@@ -1,0 +1,92 @@
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url(./fonts/JetBrainsMono-Regular.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: JetBrainsMono-Regular;
+}
+
+.mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(0, 97, 97);
+    color: white;
+}
+
+menu {
+    background-color: rgb(0, 46, 46);
+    color: white;
+    width: 25%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.headlineAndLogin > h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+#mainForm > input {
+    height: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: JetBrainsMono-Regular;
+}
+
+#mainForm > button {
+    outline: none;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 18px;
+    font-family: JetBrainsMono-Regular;
+    cursor: pointer;
+}
+
+.addedBox > div > p{
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.addedBox > div > p:active {
+    background-color: rgb(0, 92, 92);
+}
+
+
+.taskDetails {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(0, 88, 88);
+    color: white;
+    width: 75%;
+}
+
+
+.taskDetails2 > h2{
+    font-size: 30px;
+}
+
+.taskDetails2 > p {
+    font-size: 20px;
+}
