@@ -21,7 +21,7 @@ function addFucn() {
   
   const textTask = mainInputBox.value.trim();
   const alertMainDiv = document.querySelector(`.alertMainDiv`);
-
+  
   if (textTask === ``) {
     alertMainDiv.style.display = `flex`;
   } else {
@@ -32,7 +32,33 @@ function addFucn() {
     li.textContent = textTask;
     mainInputBox.value = ``;   
   }
+  
+  const box = document.createElement(`div`);
+  const childTasks = document.querySelector(`.childTasks`);
+  const h2 = document.createElement(`h2`);
+  const formBox = document.createElement(`form`);
+  const createInputBox = document.createElement(`input`);
+  createInputBox.type = `text`;
+  const button = document.createElement(`button`);
+  button.innerText = `add`;
+  
+  li.addEventListener(`click`, function () {
+    
+    if (childTasks.childNodes[1]) {
+      childTasks.childNodes[1].style.display = `none`;
+    } else {
+      childTasks.appendChild(box);
+      box.appendChild(h2);
+      h2.innerText = this.textContent;
+      box.appendChild(formBox);
+      formBox.appendChild(createInputBox);
+      formBox.appendChild(button);
 
+      childTasks.childNodes[1].style.display = `block`;
+    }
+    
+  })
+  
   // Alert's 'ok' button:
   okBTN.addEventListener(`click`, () => {
     alertMainDiv.style.display = `none`;
@@ -60,12 +86,9 @@ function addFucn() {
   });
 
   // Edit Todo:
-  const formBox = document.createElement(`form`);
   formBox.classList.add(`editForm`);
   const submitBtn = document.createElement(`button`);
   submitBtn.type = `submit`;
-  const createInputBox = document.createElement(`input`);
-  createInputBox.type = `text`;
   submitBtn.classList.add(`fa-solid`, `fa-pen-to-square`)
   
   ul.childNodes[1].addEventListener(`dblclick`, function(){

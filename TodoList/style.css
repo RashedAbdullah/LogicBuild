@@ -18,18 +18,19 @@ body {
 }
 
 .hero {
-    height: 100vh;
     background-color: rgb(0, 45, 45);
     color: white;
 
     display: flex;
-    padding-top: 100px;
+    padding: 50px;
     justify-content: center;
 }
 
 .hero > div {
+    width: 100%;
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
 .mainTask > form > input {
@@ -106,6 +107,10 @@ body {
     font-size: 20px;
     border: none;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.addedTask > ul > li {
     cursor: pointer;
 }
 
